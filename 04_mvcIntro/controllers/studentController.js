@@ -1,3 +1,7 @@
+const getStudent = (req, res) => {
+  res.send('Student landing page...');
+};
+
 const studentInfo = (req, res) => {
   res.send('<h1>Students Information through controller </h1>');
 };
@@ -10,6 +14,7 @@ const studentFee = (req, res) => {
 };
 
 module.exports = {
+  getStudent,
   studentInfo,
   studentResult,
   studentFee,
