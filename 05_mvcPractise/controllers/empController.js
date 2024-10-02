@@ -21,8 +21,9 @@ const contact = (req, res) => {
 };
 
 const saveData = (req, res) => {
-  const { empId, empName, empCity, empSalary } = req.body;
+  const { empId, empName, empCity, empSalary } = req.body; //retriving dat
 
+  //saving data into database
   const empData = new empModel({
     empId: empId,
     name: empName,
