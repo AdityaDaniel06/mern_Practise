@@ -25,7 +25,7 @@ const addNewStudent = (req, res) => {
 const createStudent = async (req, res) => {
   const { name, age, grade, roll } = req.body;
   //POST Add new student to the database using create method
-  const studentData = studentModel.create({
+  const studentData = await studentModel.create({
     studentName: name,
     studentAge: age,
     studentMark: mark,
